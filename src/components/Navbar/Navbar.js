@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import LOGO from "../../Assets/logo1.png";
 
 function Navbar({ handleLogout }) {
   const [click, setClick] = useState(false);
@@ -11,7 +12,7 @@ function Navbar({ handleLogout }) {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Women Essential
+        Women Essential
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -41,22 +42,28 @@ function Navbar({ handleLogout }) {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link
-              to='/doctor'
+          <Link
+              to='/health'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Doctor
+              period Tracker
             </Link>
+            
           </li>
+         
           <li className='nav-item'>
             <Link to='/hi' className='nav-links' style={{ color: "#1aff1a", hover: "none" }} onClick={closeMobileMenu}>
               A/आ
             </Link>
           </li>
+         
           <li className='nav-item' style={{ cursor: "pointer" }}>
-            <img alt="logout" onClick={handleLogout} src="https://img.icons8.com/flat-round/30/000000/back--v1.png" />
+            <img className='logo' alt="logout" onClick={handleLogout} src={LOGO} />
           </li>
+         
+         
+         
         </ul>
       </nav>
     </>

@@ -3,21 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 .navbar {
-  background: #171c28;
-  height: 65px;
+  background:  #242222;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .navbar-logo {
-  color: #fff;
+  color: white;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 25px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+ 
   font-family: "Dancing Script", cursive;
 }
 
@@ -40,11 +41,21 @@
 .nav-item {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 90px;
+  
+}
+/* logo*/
+
+.logo img{
+  
+  
+ 
+  
 }
 
 .nav-links {
   color: white;
+ 
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-family: "Source Serif Pro", serif;
